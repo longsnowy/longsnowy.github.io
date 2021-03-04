@@ -23,20 +23,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"algolia":{"appID":"7OPFJGQF88","apiKey":"40e25f75e8dc7a79260372f05dbb9681","indexName":"blog-next","hits":{"per_page":10}}};
   </script>
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Git学习笔记1. Git基础1.1 Git使用前配置 git config --global user.name YourName 配置提交人姓名 git config --global user.email YourEmail 配置提交人邮箱 git config --list 查看git配置信息  注意  如果想要修改配置，重复上述命令即可。  配置命令只需要执行一次。  Windows下">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/03/04/hello-world/index.html">
+<meta property="og:title" content="Git学习笔记">
+<meta property="og:url" content="http://example.com/2021/03/04/git-notes-0/index.html">
 <meta property="og:site_name" content="Long&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Git学习笔记1. Git基础1.1 Git使用前配置 git config --global user.name YourName 配置提交人姓名 git config --global user.email YourEmail 配置提交人邮箱 git config --list 查看git配置信息  注意  如果想要修改配置，重复上述命令即可。  配置命令只需要执行一次。  Windows下">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-04T02:07:28.935Z">
-<meta property="article:modified_time" content="2021-03-04T02:07:28.935Z">
+<meta property="og:image" content="https://longblog-1301930982.cos.ap-nanjing.myqcloud.com/img/_____101_V_2560_1600.jpg">
+<meta property="article:published_time" content="2021-03-04T02:35:56.000Z">
+<meta property="article:modified_time" content="2021-03-04T11:50:51.445Z">
 <meta property="article:author" content="GongYunlong">
+<meta property="article:tag" content="Git">
+<meta property="article:tag" content="Github">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://longblog-1301930982.cos.ap-nanjing.myqcloud.com/img/_____101_V_2560_1600.jpg">
 
 
-<link rel="canonical" href="http://example.com/2021/03/04/hello-world/">
+<link rel="canonical" href="http://example.com/2021/03/04/git-notes-0/">
 
 
 <script class="page-configurations">
@@ -48,7 +52,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>Hello World | Long's Blog</title>
+<title>Git学习笔记 | Long's Blog</title>
   
 
 
@@ -183,7 +187,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">Git学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Git%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">1. Git基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-Git%E4%BD%BF%E7%94%A8%E5%89%8D%E9%85%8D%E7%BD%AE"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 Git使用前配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E6%8F%90%E4%BA%A4%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 提交步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E6%92%A4%E9%94%80"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 撤销</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Git%E8%BF%9B%E9%98%B6"><span class="nav-number">1.2.</span> <span class="nav-text">2. Git进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%88%86%E6%94%AF"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%9A%82%E6%97%B6%E4%BF%9D%E5%AD%98%E6%9B%B4%E6%94%B9"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 暂时保存更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Git%E5%BF%BD%E7%95%A5%E6%B8%85%E5%8D%95"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 Git忽略清单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Github"><span class="nav-number">1.3.</span> <span class="nav-text">3.Github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 推送到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%85%8B%E9%9A%86%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%88%B0%E6%9C%AC%E5%9C%B0"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 克隆远程仓库到本地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E6%8B%89%E5%8F%96%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 拉取远程仓库中的最新版本</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -259,7 +263,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/git-notes-0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -272,7 +276,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          Git学习笔记
         </h1>
 
         <div class="post-meta-container">
@@ -282,8 +286,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-03-04 10:07:28" itemprop="dateCreated datePublished" datetime="2021-03-04T10:07:28+08:00">2021-03-04</time>
+      <time title="创建时间：2021-03-04 10:35:56 / 修改时间：19:50:51" itemprop="dateCreated datePublished" datetime="2021-03-04T10:35:56+08:00">2021-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
     </span>
 
   
@@ -295,8 +309,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/03/04/hello-world/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/04/hello-world/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/03/04/git-notes-0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/04/git-notes-0/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -310,19 +324,69 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <p><img src="https://longblog-1301930982.cos.ap-nanjing.myqcloud.com/img/_____101_V_2560_1600.jpg" alt="_____101_V_2560_1600"></p>
+<h1 id="Git学习笔记"><a href="#Git学习笔记" class="headerlink" title="Git学习笔记"></a>Git学习笔记</h1><h2 id="1-Git基础"><a href="#1-Git基础" class="headerlink" title="1. Git基础"></a>1. Git基础</h2><h3 id="1-1-Git使用前配置"><a href="#1-1-Git使用前配置" class="headerlink" title="1.1 Git使用前配置"></a>1.1 Git使用前配置</h3><ul>
+<li><code>git config --global user.name YourName </code>配置提交人姓名</li>
+<li><code>git config --global user.email YourEmail </code>配置提交人邮箱</li>
+<li><code>git config --list </code>查看git配置信息</li>
+</ul>
+<p><strong>注意</strong></p>
+<ol>
+<li><p>如果想要修改配置，重复上述命令即可。</p>
+</li>
+<li><p>配置命令只需要执行一次。</p>
+</li>
+<li><p>Windows下中文乱码问题：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在命令行中输入如下命令</span><br><span class="line">git config --global core.quotepath false</span><br><span class="line">git config --global gui.encoding utf-8</span><br><span class="line">git config --global i18n.commit.encoding utf-8</span><br><span class="line">git config --global i18n.logoutputencoding utf-8</span><br><span class="line"></span><br><span class="line">CMD: </span><br><span class="line">set LESSCHARSET&#x3D;utf-8</span><br><span class="line"></span><br><span class="line">PowerShell</span><br><span class="line">$env:LESSCHARSET&#x3D;&#39;utf-8&#39;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="1-2-提交步骤"><a href="#1-2-提交步骤" class="headerlink" title="1.2 提交步骤"></a>1.2 提交步骤</h3><ul>
+<li><p><code>git init</code> 初始化git仓库</p>
+</li>
+<li><p><code>git status </code>查看文件状态</p>
+</li>
+<li><p><code>git add Files </code>添加追踪文件</p>
+</li>
+<li><p><code>git commit -m &quot;Message&quot; </code>向仓库提交代码</p>
+</li>
+<li><p><code>git log </code>查看提交记录</p>
+</li>
+</ul>
+<h3 id="1-3-撤销"><a href="#1-3-撤销" class="headerlink" title="1.3 撤销"></a>1.3 撤销</h3><ul>
+<li><p><code>git check File </code>用暂存区中的文件覆盖工作目录中的文件</p>
+</li>
+<li><p><code>git rm --cached File</code> 将文件从暂存区中删除</p>
+</li>
+<li><p><code>git reset --hard commitID</code> 将git仓库中指定的更新记录恢复出来，并覆盖暂存区和工作目录</p>
+</li>
+</ul>
+<h2 id="2-Git进阶"><a href="#2-Git进阶" class="headerlink" title="2. Git进阶"></a>2. Git进阶</h2><h3 id="2-1-分支"><a href="#2-1-分支" class="headerlink" title="2.1 分支"></a>2.1 分支</h3><ul>
+<li><code>git branch</code> 查看分支</li>
+<li><code>git branch BranceName</code> 创建分支</li>
+<li><code>git checkout BranceName</code> 切换分支</li>
+<li><code>git merge BranceName</code> 合并分支</li>
+<li><code>git brance -d BranceName</code> 删除分支（合并后才允许删除，-D强制删除） </li>
+</ul>
+<h3 id="2-2-暂时保存更改"><a href="#2-2-暂时保存更改" class="headerlink" title="2.2 暂时保存更改"></a>2.2 暂时保存更改</h3><p>暂时提取分支上的所有改动并储存，得到一个干净的工作副本，临时切换分支，转向其他工作。</p>
+<ul>
+<li><code>git stash</code> 临时储存改动</li>
+<li><code>git stash pop</code> 恢复改动</li>
+</ul>
+<h3 id="2-3-Git忽略清单"><a href="#2-3-Git忽略清单" class="headerlink" title="2.3 Git忽略清单"></a>2.3 Git忽略清单</h3><p>文件名称<code>.gitingore</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;doc&#x2F;</span><br><span class="line">&#x2F;target&#x2F;</span><br><span class="line">&#x2F;.idea&#x2F;</span><br><span class="line">&#x2F;offer.iml</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>如果添加.gitignore的时候，git里面已经上传了很多不需要的文件，则使用下面两个命令：<br>如果是文件夹：<code>git rm -r --cached</code> 文件夹名<br>如果是文件：<code>git rm --cached</code> 文件名</p>
+<h2 id="3-Github"><a href="#3-Github" class="headerlink" title="3.Github"></a>3.Github</h2><h3 id="3-1-推送到远程仓库"><a href="#3-1-推送到远程仓库" class="headerlink" title="3.1 推送到远程仓库"></a>3.1 推送到远程仓库</h3><ul>
+<li><code>git push url BranceName</code>  通过url推送到远程仓库</li>
+<li><code>git push Name BranceName</code>  通过别名推送到远程仓库</li>
+<li><code>git push -u url BranceName</code>  -u记住仓库地址别名，下此只需<code>git push</code>即可。</li>
+<li><code>git remote add Name url</code> 为一个远程仓库添加别名</li>
+</ul>
+<h3 id="3-2-克隆远程仓库到本地"><a href="#3-2-克隆远程仓库到本地" class="headerlink" title="3.2 克隆远程仓库到本地"></a>3.2 克隆远程仓库到本地</h3><ul>
+<li><code>git clone url</code> 克隆远程仓库</li>
+</ul>
+<h3 id="3-3-拉取远程仓库中的最新版本"><a href="#3-3-拉取远程仓库中的最新版本" class="headerlink" title="3.3 拉取远程仓库中的最新版本"></a>3.3 拉取远程仓库中的最新版本</h3><ul>
+<li><code>git pull url BranceName</code> 拉去远程仓库中的最新版本</li>
+</ul>
 
     </div>
 
@@ -331,14 +395,21 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"># Git</a>
+              <a href="/tags/Github/" rel="tag"># Github</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2021/03/04/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/03/04/git-notes-0/" rel="next" title="Git学习笔记">
+                <a href="/2021/03/04/Git-Notes/" rel="next" title="Git学习笔记">
                   Git学习笔记 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
@@ -431,9 +502,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "http://example.com/2021/03/04/hello-world/";
-    this.page.identifier = "2021/03/04/hello-world/";
-    this.page.title = "Hello World";
+    this.page.url = "http://example.com/2021/03/04/git-notes-0/";
+    this.page.identifier = "2021/03/04/git-notes-0/";
+    this.page.title = "Git学习笔记";
     };
   NexT.utils.loadComments('#disqus_thread', () => {
     if (window.DISQUS) {
