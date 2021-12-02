@@ -194,20 +194,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -244,6 +244,101 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="GongYunlong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Long's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/" class="post-title-link" itemprop="url">记一次Arch+i3中使用vscode遇到的错误</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-12-02 13:08:00 / 修改时间：13:10:00" itemprop="dateCreated datePublished" datetime="2021-12-02T13:08:00+08:00">2021-12-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" itemprop="url" rel="index"><span itemprop="name">问题汇总</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/12/02/记一次Arch+i3中使用vscode遇到的错误/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="记一次Arch-i3中使用vscode遇到的错误"><a href="#记一次Arch-i3中使用vscode遇到的错误" class="headerlink" title="记一次Arch+i3中使用vscode遇到的错误"></a>记一次Arch+i3中使用vscode遇到的错误</h1><p>在使用vscode的时候,我可以通过程序菜单打开软件,但是在命令行使用code命令打开vscode编辑文件的时候,vscode的界面是黑着的,我尝试切换到kde桌面环境下,一切正常.</p>
+<p>经过一系列尝试,在zsh的配置文件中将</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> https_proxy=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> http_proxy=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> all_proxy=:<span class="string">&quot;http//127.0.0.1:7890&quot;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>三行内容注释掉,发现问题解决.</p>
+<p>个人感觉和系统代理有关,kde等完整的桌面环境下使用chrome可以自动读取系统代理,但是切换到i3wm下,chrome读取不到系统代理配置,我只能通过下面的方式来打开chrome</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">google-chrome-stable --proxy-server=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -960,7 +1055,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-26 22:36:47" itemprop="dateModified" datetime="2021-11-26T22:36:47+08:00">2021-11-26</time>
+        <time title="修改时间：2021-12-02 13:09:52" itemprop="dateModified" datetime="2021-12-02T13:09:52+08:00">2021-12-02</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
