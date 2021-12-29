@@ -24,23 +24,25 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"snowlong.ml","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"algolia":{"appID":"5S42BG2QUG","apiKey":"fdc44de274b3ff4e4787b7297a4e4a7c","indexName":"HexoSearch","hits":{"per_page":10}}};
   </script>
-<meta name="description" content="SQlServer创建数据库时忘记设置排序规则Collocation，数据库中插入中文字符出现问号乱码，修改Collocation时出现报错The database could not be exclusively locked to perform the operation. 解决方法: 123456&#x2F;&#x2F;修改为单用户模式 ALTER DATABASE CAPTAIN SET SINGLE_US">
+<meta name="description" content="ArchLinux中配置Clash1. 下载Clash1https:&#x2F;&#x2F;github.com&#x2F;Dreamacro&#x2F;clash&#x2F;releases   2. 解压, 下载必要文件1234567gunzip ~&#x2F;Downloads&#x2F;clash-linux-amd64-v1.5.0.gz mkdir &#x2F;opt&#x2F;clashmv ~&#x2F;Downloads&#x2F;cla">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Docker学习笔记">
-<meta property="og:url" content="http://snowlong.ml/2021/11/26/MSSQL%E6%8F%92%E5%85%A5%E4%B8%AD%E6%96%87%E5%8F%98%E6%88%90%E9%97%AE%E5%8F%B7%E4%BF%AE%E6%94%B9%E5%AD%97%E7%AC%A6%E9%9B%86%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:title" content="ArchLinux中配置Clash">
+<meta property="og:url" content="http://snowlong.ml/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/index.html">
 <meta property="og:site_name" content="Long&#39;s Blog">
-<meta property="og:description" content="SQlServer创建数据库时忘记设置排序规则Collocation，数据库中插入中文字符出现问号乱码，修改Collocation时出现报错The database could not be exclusively locked to perform the operation. 解决方法: 123456&#x2F;&#x2F;修改为单用户模式 ALTER DATABASE CAPTAIN SET SINGLE_US">
+<meta property="og:description" content="ArchLinux中配置Clash1. 下载Clash1https:&#x2F;&#x2F;github.com&#x2F;Dreamacro&#x2F;clash&#x2F;releases   2. 解压, 下载必要文件1234567gunzip ~&#x2F;Downloads&#x2F;clash-linux-amd64-v1.5.0.gz mkdir &#x2F;opt&#x2F;clashmv ~&#x2F;Downloads&#x2F;cla">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-11-26T09:07:52.000Z">
-<meta property="article:modified_time" content="2021-12-06T14:14:44.000Z">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200525184-1393101998.png">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200922144-59740430.png">
+<meta property="article:published_time" content="2021-12-29T12:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-29T12:17:49.739Z">
 <meta property="article:author" content="GongYunlong">
-<meta property="article:tag" content="MSSQL">
-<meta property="article:tag" content="Ubuntu">
-<meta property="article:tag" content="SQlServer">
+<meta property="article:tag" content="Arch">
+<meta property="article:tag" content="Clash">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200525184-1393101998.png">
 
 
-<link rel="canonical" href="http://snowlong.ml/2021/11/26/MSSQL%E6%8F%92%E5%85%A5%E4%B8%AD%E6%96%87%E5%8F%98%E6%88%90%E9%97%AE%E5%8F%B7%E4%BF%AE%E6%94%B9%E5%AD%97%E7%AC%A6%E9%9B%86%E6%96%B9%E6%B3%95/">
+<link rel="canonical" href="http://snowlong.ml/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/">
 
 
 <script class="page-configurations">
@@ -52,7 +54,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>Docker学习笔记 | Long's Blog</title>
+<title>ArchLinux中配置Clash | Long's Blog</title>
   
 
 
@@ -174,7 +176,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -187,6 +189,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash"><span class="nav-number">1.</span> <span class="nav-text">ArchLinux中配置Clash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%B8%8B%E8%BD%BDClash"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 下载Clash</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%A7%A3%E5%8E%8B-%E4%B8%8B%E8%BD%BD%E5%BF%85%E8%A6%81%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.</span> <span class="nav-text">2. 解压, 下载必要文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%B5%8B%E8%AF%95"><span class="nav-number">1.1.1.</span> <span class="nav-text">3. 测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%AE%BE%E4%B8%BA%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.1.2.</span> <span class="nav-text">4. 设为服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E9%85%8D%E7%BD%AE%E5%AE%9A%E6%97%B6%E6%9B%B4%E6%96%B0%E8%AE%A2%E9%98%85"><span class="nav-number">1.1.3.</span> <span class="nav-text">5. 配置定时更新订阅</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E8%AE%BE%E7%BD%AEzsh%E4%BB%A3%E7%90%86%E5%92%8Cgit%E4%BB%A3%E7%90%86"><span class="nav-number">1.1.4.</span> <span class="nav-text">6. 设置zsh代理和git代理</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -262,7 +265,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/11/26/MSSQL%E6%8F%92%E5%85%A5%E4%B8%AD%E6%96%87%E5%8F%98%E6%88%90%E9%97%AE%E5%8F%B7%E4%BF%AE%E6%94%B9%E5%AD%97%E7%AC%A6%E9%9B%86%E6%96%B9%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -275,7 +278,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Docker学习笔记
+          ArchLinux中配置Clash
         </h1>
 
         <div class="post-meta-container">
@@ -285,23 +288,17 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-11-26 17:07:52" itemprop="dateCreated datePublished" datetime="2021-11-26T17:07:52+08:00">2021-11-26</time>
+      <time title="创建时间：2021-12-29 20:00:00 / 修改时间：20:17:49" itemprop="dateCreated datePublished" datetime="2021-12-29T20:00:00+08:00">2021-12-29</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-12-06 22:14:44" itemprop="dateModified" datetime="2021-12-06T22:14:44+08:00">2021-12-06</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/MSSQL/" itemprop="url" rel="index"><span itemprop="name">MSSQL</span></a>
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
         </span>
     </span>
 
@@ -314,8 +311,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/11/26/MSSQL%E6%8F%92%E5%85%A5%E4%B8%AD%E6%96%87%E5%8F%98%E6%88%90%E9%97%AE%E5%8F%B7%E4%BF%AE%E6%94%B9%E5%AD%97%E7%AC%A6%E9%9B%86%E6%96%B9%E6%B3%95/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/11/26/MSSQL插入中文变成问号修改字符集方法/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/12/29/ArchLinux中配置Clash/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -329,9 +326,50 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>SQlServer创建数据库时忘记设置排序规则Collocation，数据库中插入中文字符出现问号乱码，修改Collocation时出现报错The database could not be exclusively locked to perform the operation.</p>
-<p>解决方法:</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">/</span>修改为单用户模式 </span><br><span class="line"><span class="keyword">ALTER</span> DATABASE CAPTAIN <span class="keyword">SET</span> SINGLE_USER <span class="keyword">WITH</span> <span class="keyword">ROLLBACK</span> IMMEDIATE; </span><br><span class="line"><span class="operator">/</span><span class="operator">/</span>修改Options的Collocation属性为Chinese_PRC_90_CI_AS </span><br><span class="line"><span class="keyword">ALTER</span> DATABASE CAPTAIN <span class="keyword">COLLATE</span> Chinese_PRC_90_CI_AS; </span><br><span class="line">再修改为多用户模式</span><br><span class="line"><span class="keyword">ALTER</span> DATABASE CAPTAIN <span class="keyword">SET</span> MULTI_USER;</span><br></pre></td></tr></table></figure>
+        <h1 id="ArchLinux中配置Clash"><a href="#ArchLinux中配置Clash" class="headerlink" title="ArchLinux中配置Clash"></a>ArchLinux中配置Clash</h1><h3 id="1-下载Clash"><a href="#1-下载Clash" class="headerlink" title="1. 下载Clash"></a>1. 下载Clash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;Dreamacro&#x2F;clash&#x2F;releases</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200525184-1393101998.png" alt="image-20211229200524193"></p>
+<h2 id="2-解压-下载必要文件"><a href="#2-解压-下载必要文件" class="headerlink" title="2. 解压, 下载必要文件"></a>2. 解压, 下载必要文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gunzip ~/Downloads/clash-linux-amd64-v1.5.0.gz </span><br><span class="line">mkdir /opt/clash</span><br><span class="line">mv ~/Downloads/clash-linux-amd64 /opt/clash/clash </span><br><span class="line">cd /opt/clash/</span><br><span class="line">wget -O config.yaml [订阅链接] </span><br><span class="line">wget -O Country.mmdb https://www.sub-speeder.com/client-download/Country.mmdb</span><br><span class="line">chmod +x clash </span><br></pre></td></tr></table></figure>
+
+<p>最后有如下文件:</p>
+<p><img src="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200922144-59740430.png" alt="image-20211229200921197"></p>
+<h3 id="3-测试"><a href="#3-测试" class="headerlink" title="3. 测试"></a>3. 测试</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/clash</span><br><span class="line">./clash -d . </span><br></pre></td></tr></table></figure>
+
+<p>打开<a target="_blank" rel="noopener" href="http://clash.razord.top,选择节点,配置firefox代理端口未7890,测试/">http://clash.razord.top,选择节点,配置firefox代理端口未7890,测试</a>.</p>
+<h3 id="4-设为服务"><a href="#4-设为服务" class="headerlink" title="4. 设为服务"></a>4. 设为服务</h3><p><strong>1.创建service文件</strong><br><code>touch /etc/systemd/system/clash.service</code><br><strong>2.编辑service文件</strong><br>打开service文件<br><code>vi /etc/systemd/system/clash.service</code><br>填入以下内容**(注意修改clash文件夹路径)**</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=clash daemon</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">User=root</span><br><span class="line">ExecStart=/opt/clash/clash -d /opt/clash/</span><br><span class="line">Restart=on-failure</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>保存并退出<br>3.重新加载systemctl daemon</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure>
+
+<p>4.启动Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start clash.service</span><br></pre></td></tr></table></figure>
+
+<p>5.设置Clash开机自启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable clash.service</span><br></pre></td></tr></table></figure>
+
+<p><strong>以下为Clash相关的管理命令</strong><br>启动Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start clash.service</span><br></pre></td></tr></table></figure>
+
+<p>重启Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart clash.service</span><br></pre></td></tr></table></figure>
+
+<p>查看Clash运行状态</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status clash.service</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-配置定时更新订阅"><a href="#5-配置定时更新订阅" class="headerlink" title="5. 配置定时更新订阅"></a>5. 配置定时更新订阅</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">29 6 * * * root pgrep clash | xargs kill -s</span><br><span class="line">30 6 * * * root mv /opt/clash/config.yaml /opt/clash/configbackup.yaml</span><br><span class="line">31 6 * * * root wget -P /opt/clash/ -O config.yaml [订阅连接]</span><br><span class="line">32 6 * * * root nohup /opt/clash/clash -d /opt/clash/</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-设置zsh代理和git代理"><a href="#6-设置zsh代理和git代理" class="headerlink" title="6. 设置zsh代理和git代理"></a>6. 设置zsh代理和git代理</h3><p>zsh:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrcshe</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=&quot;http://127.0.0.1:7890&quot;</span><br><span class="line">export http_proxy=&quot;http://127.0.0.1:7890&quot;</span><br><span class="line">export all_proxy=:&quot;http//127.0.0.1:7890&quot;</span><br></pre></td></tr></table></figure>
+
+<p>git:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy http://127.0.0.1:7890</span><br><span class="line">git config --global https.proxy https://127.0.0.1:7890</span><br><span class="line">git config --global http.proxy &#x27;socks5://127.0.0.1:7891&#x27;</span><br><span class="line">git config --global https.proxy &#x27;socks5://127.0.0.1:7891&#x27;</span><br></pre></td></tr></table></figure>
 
 
     </div>
@@ -342,22 +380,21 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/MSSQL/" rel="tag"># MSSQL</a>
-              <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
-              <a href="/tags/SQlServer/" rel="tag"># SQlServer</a>
+              <a href="/tags/Arch/" rel="tag"># Arch</a>
+              <a href="/tags/Clash/" rel="tag"># Clash</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/03/17/SSH%E5%AF%86%E9%92%A5%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE/" rel="prev" title="SSH密钥登录配置">
-                  <i class="fa fa-chevron-left"></i> SSH密钥登录配置
+                <a href="/2021/12/05/Hexo%E5%9B%BE%E7%89%87%E5%A4%96%E9%93%BE403%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/" rel="prev" title="Hexo图片外链403问题解决">
+                  <i class="fa fa-chevron-left"></i> Hexo图片外链403问题解决
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/26/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="Docker学习笔记">
-                  Docker学习笔记 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/12/29/ArchLinux%E5%AE%89%E8%A3%85%E5%89%8D%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/" rel="next" title="ArchLinux安装前网络配置">
+                  ArchLinux安装前网络配置 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -449,9 +486,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "http://snowlong.ml/2021/11/26/MSSQL%E6%8F%92%E5%85%A5%E4%B8%AD%E6%96%87%E5%8F%98%E6%88%90%E9%97%AE%E5%8F%B7%E4%BF%AE%E6%94%B9%E5%AD%97%E7%AC%A6%E9%9B%86%E6%96%B9%E6%B3%95/";
-    this.page.identifier = "2021/11/26/MSSQL插入中文变成问号修改字符集方法/";
-    this.page.title = "Docker学习笔记";
+    this.page.url = "http://snowlong.ml/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/";
+    this.page.identifier = "2021/12/29/ArchLinux中配置Clash/";
+    this.page.title = "ArchLinux中配置Clash";
     };
   NexT.utils.loadComments('#disqus_thread', () => {
     if (window.DISQUS) {

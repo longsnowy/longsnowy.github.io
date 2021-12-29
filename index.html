@@ -195,7 +195,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -208,7 +208,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -245,6 +245,232 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/12/29/ArchLinux%E5%AE%89%E8%A3%85%E5%89%8D%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="GongYunlong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Long's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/29/ArchLinux%E5%AE%89%E8%A3%85%E5%89%8D%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">ArchLinux安装前网络配置</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-12-29 20:18:00 / 修改时间：20:23:40" itemprop="dateCreated datePublished" datetime="2021-12-29T20:18:00+08:00">2021-12-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/12/29/ArchLinux%E5%AE%89%E8%A3%85%E5%89%8D%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/12/29/ArchLinux安装前网络配置/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="ArchLinux安装前网络配置"><a href="#ArchLinux安装前网络配置" class="headerlink" title="ArchLinux安装前网络配置"></a>ArchLinux安装前网络配置</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rfkill unblock wifi</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ip link</span><br><span class="line">ip link set wlan0 up</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">iwctl</span><br><span class="line">device list</span><br><span class="line">ststion wlan0 scan</span><br><span class="line">ststion wlan0 get-networks</span><br><span class="line">ststion wlan0 connect [WIFI_NAME]</span><br></pre></td></tr></table></figure>
+
+<p>参考:<a target="_blank" rel="noopener" href="https://arch.icekylin.online/">https://arch.icekylin.online/</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="GongYunlong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Long's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/" class="post-title-link" itemprop="url">ArchLinux中配置Clash</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-12-29 20:00:00 / 修改时间：20:17:49" itemprop="dateCreated datePublished" datetime="2021-12-29T20:00:00+08:00">2021-12-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2021/12/29/ArchLinux%E4%B8%AD%E9%85%8D%E7%BD%AEClash/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/12/29/ArchLinux中配置Clash/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="ArchLinux中配置Clash"><a href="#ArchLinux中配置Clash" class="headerlink" title="ArchLinux中配置Clash"></a>ArchLinux中配置Clash</h1><h3 id="1-下载Clash"><a href="#1-下载Clash" class="headerlink" title="1. 下载Clash"></a>1. 下载Clash</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;Dreamacro&#x2F;clash&#x2F;releases</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200525184-1393101998.png" alt="image-20211229200524193"></p>
+<h2 id="2-解压-下载必要文件"><a href="#2-解压-下载必要文件" class="headerlink" title="2. 解压, 下载必要文件"></a>2. 解压, 下载必要文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">gunzip ~/Downloads/clash-linux-amd64-v1.5.0.gz </span><br><span class="line">mkdir /opt/clash</span><br><span class="line">mv ~/Downloads/clash-linux-amd64 /opt/clash/clash </span><br><span class="line">cd /opt/clash/</span><br><span class="line">wget -O config.yaml [订阅链接] </span><br><span class="line">wget -O Country.mmdb https://www.sub-speeder.com/client-download/Country.mmdb</span><br><span class="line">chmod +x clash </span><br></pre></td></tr></table></figure>
+
+<p>最后有如下文件:</p>
+<p><img src="https://img2020.cnblogs.com/blog/2088076/202112/2088076-20211229200922144-59740430.png" alt="image-20211229200921197"></p>
+<h3 id="3-测试"><a href="#3-测试" class="headerlink" title="3. 测试"></a>3. 测试</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/clash</span><br><span class="line">./clash -d . </span><br></pre></td></tr></table></figure>
+
+<p>打开<a target="_blank" rel="noopener" href="http://clash.razord.top,选择节点,配置firefox代理端口未7890,测试/">http://clash.razord.top,选择节点,配置firefox代理端口未7890,测试</a>.</p>
+<h3 id="4-设为服务"><a href="#4-设为服务" class="headerlink" title="4. 设为服务"></a>4. 设为服务</h3><p><strong>1.创建service文件</strong><br><code>touch /etc/systemd/system/clash.service</code><br><strong>2.编辑service文件</strong><br>打开service文件<br><code>vi /etc/systemd/system/clash.service</code><br>填入以下内容**(注意修改clash文件夹路径)**</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=clash daemon</span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">User=root</span><br><span class="line">ExecStart=/opt/clash/clash -d /opt/clash/</span><br><span class="line">Restart=on-failure</span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>保存并退出<br>3.重新加载systemctl daemon</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure>
+
+<p>4.启动Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start clash.service</span><br></pre></td></tr></table></figure>
+
+<p>5.设置Clash开机自启动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable clash.service</span><br></pre></td></tr></table></figure>
+
+<p><strong>以下为Clash相关的管理命令</strong><br>启动Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start clash.service</span><br></pre></td></tr></table></figure>
+
+<p>重启Clash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart clash.service</span><br></pre></td></tr></table></figure>
+
+<p>查看Clash运行状态</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status clash.service</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-配置定时更新订阅"><a href="#5-配置定时更新订阅" class="headerlink" title="5. 配置定时更新订阅"></a>5. 配置定时更新订阅</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">29 6 * * * root pgrep clash | xargs kill -s</span><br><span class="line">30 6 * * * root mv /opt/clash/config.yaml /opt/clash/configbackup.yaml</span><br><span class="line">31 6 * * * root wget -P /opt/clash/ -O config.yaml [订阅连接]</span><br><span class="line">32 6 * * * root nohup /opt/clash/clash -d /opt/clash/</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-设置zsh代理和git代理"><a href="#6-设置zsh代理和git代理" class="headerlink" title="6. 设置zsh代理和git代理"></a>6. 设置zsh代理和git代理</h3><p>zsh:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrcshe</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=&quot;http://127.0.0.1:7890&quot;</span><br><span class="line">export http_proxy=&quot;http://127.0.0.1:7890&quot;</span><br><span class="line">export all_proxy=:&quot;http//127.0.0.1:7890&quot;</span><br></pre></td></tr></table></figure>
+
+<p>git:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy http://127.0.0.1:7890</span><br><span class="line">git config --global https.proxy https://127.0.0.1:7890</span><br><span class="line">git config --global http.proxy &#x27;socks5://127.0.0.1:7891&#x27;</span><br><span class="line">git config --global https.proxy &#x27;socks5://127.0.0.1:7891&#x27;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -991,198 +1217,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source &#x2F;etc&#x2F;profile </span><br></pre></td></tr></table></figure>
 
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/03/17/Oh-my-zsh%E7%9A%84%E5%AE%89%E8%A3%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="GongYunlong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Long's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/17/Oh-my-zsh%E7%9A%84%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">Oh-my-zsh的安装</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-03-17 09:45:38" itemprop="dateCreated datePublished" datetime="2021-03-17T09:45:38+08:00">2021-03-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-26 22:46:54" itemprop="dateModified" datetime="2021-11-26T22:46:54+08:00">2021-11-26</time>
-      </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2021/03/17/Oh-my-zsh%E7%9A%84%E5%AE%89%E8%A3%85/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/17/Oh-my-zsh的安装/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="oh-my-zsh安装"><a href="#oh-my-zsh安装" class="headerlink" title="oh-my-zsh安装"></a>oh-my-zsh安装</h1><h2 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h2><ol>
-<li>git</li>
-<li>zsh</li>
-</ol>
-<h2 id="下载码云安装包"><a href="#下载码云安装包" class="headerlink" title="下载码云安装包"></a>下载码云安装包</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/17/Oh-my-zsh%E7%9A%84%E5%AE%89%E8%A3%85/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/03/17/Chrome-OS%E7%9A%84%E5%AE%89%E8%A3%85/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="GongYunlong">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Long's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/17/Chrome-OS%E7%9A%84%E5%AE%89%E8%A3%85/" class="post-title-link" itemprop="url">Chrome OS的安装</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-03-17 09:44:49" itemprop="dateCreated datePublished" datetime="2021-03-17T09:44:49+08:00">2021-03-17</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-11-26 22:44:05" itemprop="dateModified" datetime="2021-11-26T22:44:05+08:00">2021-11-26</time>
-      </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2021/03/17/Chrome-OS%E7%9A%84%E5%AE%89%E8%A3%85/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/03/17/Chrome-OS的安装/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="ChromeOS安装"><a href="#ChromeOS安装" class="headerlink" title="ChromeOS安装"></a>ChromeOS安装</h1><h3 id="1-需要的文件"><a href="#1-需要的文件" class="headerlink" title="1. 需要的文件"></a>1. 需要的文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;rufus.ie&#x2F;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;github.com&#x2F;sebanc&#x2F;brunch&#x2F;releases</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brunch_r88_stable_20210223.tar.gz</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/03/17/Chrome-OS%E7%9A%84%E5%AE%89%E8%A3%85/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
