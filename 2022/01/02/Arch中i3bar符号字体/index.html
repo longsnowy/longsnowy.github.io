@@ -24,22 +24,24 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"snowlong.ml","root":"/","images":"/images","scheme":"Pisces","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":null,"activeClass":"disqus"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"algolia":{"appID":"5S42BG2QUG","apiKey":"fdc44de274b3ff4e4787b7297a4e4a7c","indexName":"HexoSearch","hits":{"per_page":10}}};
   </script>
-<meta name="description" content="记一次Arch+i3中使用vscode遇到的错误在使用vscode的时候,我可以通过程序菜单打开软件,但是在命令行使用code命令打开vscode编辑文件的时候,vscode的界面是黑着的,我尝试切换到kde桌面环境下,一切正常. 经过一系列尝试,在zsh的配置文件中将 123#export https_proxy&#x3D;&quot;http:&#x2F;&#x2F;127.0.0.1:7890&quot;#export">
+<meta name="description" content="ArchLinux中i3bar符号字体安装1sudo pacman -S ttf-font-awesome  效果:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记一次Arch+i3中使用vscode遇到的错误">
-<meta property="og:url" content="http://snowlong.ml/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/index.html">
+<meta property="og:title" content="ArchLinux中i3bar符号字体安装">
+<meta property="og:url" content="http://snowlong.ml/2022/01/02/Arch%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93/index.html">
 <meta property="og:site_name" content="Long&#39;s Blog">
-<meta property="og:description" content="记一次Arch+i3中使用vscode遇到的错误在使用vscode的时候,我可以通过程序菜单打开软件,但是在命令行使用code命令打开vscode编辑文件的时候,vscode的界面是黑着的,我尝试切换到kde桌面环境下,一切正常. 经过一系列尝试,在zsh的配置文件中将 123#export https_proxy&#x3D;&quot;http:&#x2F;&#x2F;127.0.0.1:7890&quot;#export">
+<meta property="og:description" content="ArchLinux中i3bar符号字体安装1sudo pacman -S ttf-font-awesome  效果:">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-12-02T05:08:00.000Z">
-<meta property="article:modified_time" content="2021-12-02T05:10:00.000Z">
+<meta property="og:image" content="https://img2020.cnblogs.com/blog/2088076/202201/2088076-20220103192242962-286757866.png">
+<meta property="article:published_time" content="2022-01-02T11:19:00.000Z">
+<meta property="article:modified_time" content="2022-01-03T11:23:12.160Z">
 <meta property="article:author" content="GongYunlong">
 <meta property="article:tag" content="Arch">
 <meta property="article:tag" content="i3wm">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img2020.cnblogs.com/blog/2088076/202201/2088076-20220103192242962-286757866.png">
 
 
-<link rel="canonical" href="http://snowlong.ml/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/">
+<link rel="canonical" href="http://snowlong.ml/2022/01/02/Arch%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93/">
 
 
 <script class="page-configurations">
@@ -51,7 +53,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>记一次Arch+i3中使用vscode遇到的错误 | Long's Blog</title>
+<title>ArchLinux中i3bar符号字体安装 | Long's Blog</title>
   
 
 
@@ -186,7 +188,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%B0%E4%B8%80%E6%AC%A1Arch-i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF"><span class="nav-number">1.</span> <span class="nav-text">记一次Arch+i3中使用vscode遇到的错误</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ArchLinux%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">ArchLinux中i3bar符号字体安装</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -262,7 +264,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/">
+    <link itemprop="mainEntityOfPage" href="http://snowlong.ml/2022/01/02/Arch%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpeg">
@@ -275,7 +277,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          记一次Arch+i3中使用vscode遇到的错误
+          ArchLinux中i3bar符号字体安装
         </h1>
 
         <div class="post-meta-container">
@@ -285,17 +287,23 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-12-02 13:08:00 / 修改时间：13:10:00" itemprop="dateCreated datePublished" datetime="2021-12-02T13:08:00+08:00">2021-12-02</time>
+      <time title="创建时间：2022-01-02 19:19:00" itemprop="dateCreated datePublished" datetime="2022-01-02T19:19:00+08:00">2022-01-02</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-01-03 19:23:12" itemprop="dateModified" datetime="2022-01-03T19:23:12+08:00">2022-01-03</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/" itemprop="url" rel="index"><span itemprop="name">问题汇总</span></a>
+          <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a>
         </span>
     </span>
 
@@ -308,8 +316,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/12/02/记一次Arch+i3中使用vscode遇到的错误/" itemprop="commentCount"></span>
+    <a title="disqus" href="/2022/01/02/Arch%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2022/01/02/Arch中i3bar符号字体/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -323,14 +331,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="记一次Arch-i3中使用vscode遇到的错误"><a href="#记一次Arch-i3中使用vscode遇到的错误" class="headerlink" title="记一次Arch+i3中使用vscode遇到的错误"></a>记一次Arch+i3中使用vscode遇到的错误</h1><p>在使用vscode的时候,我可以通过程序菜单打开软件,但是在命令行使用code命令打开vscode编辑文件的时候,vscode的界面是黑着的,我尝试切换到kde桌面环境下,一切正常.</p>
-<p>经过一系列尝试,在zsh的配置文件中将</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> https_proxy=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> http_proxy=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="built_in">export</span> all_proxy=:<span class="string">&quot;http//127.0.0.1:7890&quot;</span></span></span><br></pre></td></tr></table></figure>
+        <h1 id="ArchLinux中i3bar符号字体安装"><a href="#ArchLinux中i3bar符号字体安装" class="headerlink" title="ArchLinux中i3bar符号字体安装"></a>ArchLinux中i3bar符号字体安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S ttf-font-awesome</span><br></pre></td></tr></table></figure>
 
-<p>三行内容注释掉,发现问题解决.</p>
-<p>个人感觉和系统代理有关,kde等完整的桌面环境下使用chrome可以自动读取系统代理,但是切换到i3wm下,chrome读取不到系统代理配置,我只能通过下面的方式来打开chrome</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">google-chrome-stable --proxy-server=http://127.0.0.1:7890</span><br></pre></td></tr></table></figure>
-
+<p>效果:</p>
+<p><img src="https://img2020.cnblogs.com/blog/2088076/202201/2088076-20220103192242962-286757866.png" alt="image-20220103192241928"></p>
 
     </div>
 
@@ -348,14 +352,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/26/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="Docker学习笔记">
-                  <i class="fa fa-chevron-left"></i> Docker学习笔记
+                <a href="/2021/12/29/ArchLinux%E5%AE%89%E8%A3%85%E5%89%8D%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/" rel="prev" title="ArchLinux安装前网络配置">
+                  <i class="fa fa-chevron-left"></i> ArchLinux安装前网络配置
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/12/05/Typora%E7%B2%98%E8%B4%B4%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%8D%9A%E5%AE%A2%E5%9B%AD/" rel="next" title="Python脚本实现Typora粘贴图片自动上传博客园">
-                  Python脚本实现Typora粘贴图片自动上传博客园 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -446,9 +447,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "http://snowlong.ml/2021/12/02/%E8%AE%B0%E4%B8%80%E6%AC%A1Arch+i3%E4%B8%AD%E4%BD%BF%E7%94%A8vscode%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/";
-    this.page.identifier = "2021/12/02/记一次Arch+i3中使用vscode遇到的错误/";
-    this.page.title = "记一次Arch+i3中使用vscode遇到的错误";
+    this.page.url = "http://snowlong.ml/2022/01/02/Arch%E4%B8%ADi3bar%E7%AC%A6%E5%8F%B7%E5%AD%97%E4%BD%93/";
+    this.page.identifier = "2022/01/02/Arch中i3bar符号字体/";
+    this.page.title = "ArchLinux中i3bar符号字体安装";
     };
   NexT.utils.loadComments('#disqus_thread', () => {
     if (window.DISQUS) {
